@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build project",
+			"command": "/bin/gcc",
+			"args": [
+				"-g",
+				"src/main.c",
+				"src/file1.c",
+				"-o",
+				"program"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /bin/gcc"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build test",
+			"command": "/bin/gcc",
+			"args": [
+				"-g",
+				"-Isrc",
+				"-Iunity",
+				"unity/unity.c",
+				"test/test_0001.c",
+				"src/file1.c",
+				"-o",
+				"program-test"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /bin/gcc"
+		}
+	]
+}
