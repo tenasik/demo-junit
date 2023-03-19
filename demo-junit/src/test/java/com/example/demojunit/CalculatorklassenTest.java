@@ -31,4 +31,27 @@ class CalculatorklassenTest {
 
     }
 
-}
+    @Test
+    void fiveMinusOneShouldEqualFour() {
+        var calculator = new Calculatorklassen();
+        assertEquals(4, calculator.sub(5, 1));
+    }
+
+    @Test
+    void sixDivideTheeShouldEqualTwo() {
+        var calculator = new Calculatorklassen();
+        assertEquals(2, calculator.div(6, 3));
+    }
+
+    @Test
+    void fourMultiplyTwoShouldEqualEight() {
+        var calculator = new Calculatorklassen();
+        assertEquals(8, calculator.mul(4, 2));
+    }
+
+    @Test
+    void twoMultiplyTwoShouldEqualFour() {
+        var calculator = new Calculatorklassen();
+        assertTrue(calculator.mul(2, 2) == 4);
+    }
+    }
